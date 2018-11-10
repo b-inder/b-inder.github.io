@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binder</title>
+	<link rel="stylesheet" href="../startbootstrap-freelancer-gh-pages/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/dropzone.css">
+</head>
+<body onload="startTime()">
+<!-- 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Navbar</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Dropdown
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav> -->
+
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 mx-auto mb-5">
+<!-- 					<div class="countdown">
+					    <p class="timer">
+					        <span id="hours"></span> Hour(s)
+					        <span id="minutes"></span> Minute(s)
+					        <span id="seconds"></span> Second(s)
+					    </p>
+					</div> -->
+					<h1 class="text-center mb-5">Psychology Test</h1>
+					<div class="form-group mb-4">
+						<label>1. Which answer expresses the meaning opposite of that of the specified word best?</label>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question" id="question1" value="option1">
+						  <label class="form-check-label" for="question1">
+						    compassionate
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question" id="question1" value="option1">
+						  <label class="form-check-label" for="question1">
+						    comforting
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question" id="question1" value="option1">
+						  <label class="form-check-label" for="question1">
+						    explanatory
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question" id="question1" value="option1">
+						  <label class="form-check-label" for="question1">
+						    middlesome
+						  </label>
+						</div>
+					</div>
+					<div class="form-group mb-4">
+						<label>2.<strong> &nbsp;&nbsp;&nbsp;&nbsp;4 &nbsp;6 &nbsp;9&nbsp; 6 &nbsp;14 &nbsp;6&nbsp; ...</strong></label>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question2" id="question2" value="option1">
+						  <label class="form-check-label" for="question2">
+						    6
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question2" id="question2" value="option1">
+						  <label class="form-check-label" for="question2">
+						    17
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question2" id="question2" value="option1">
+						  <label class="form-check-label" for="question2">
+						    19
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question2" id="question2" value="option1">
+						  <label class="form-check-label" for="question2">
+						    21
+						  </label>
+						</div>
+					</div><div class="form-group mb-4">
+						<label>3.</label>
+						<br>
+						<label>1. None of the stamp collectors is an architect.</label>
+						<br>
+						<label>2. All the drones are stamp collectors.</label>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question3" id="question3" value="option1">
+						  <label class="form-check-label" for="question3">
+						    all stamp collectors are architects
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question3" id="question3" value="option1">
+						  <label class="form-check-label" for="question3">
+						    architects are not drones
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question3" id="question3" value="option1">
+						  <label class="form-check-label" for="question3">
+						    no stamp collectors are drones
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question3" id="question3" value="option1">
+						  <label class="form-check-label" for="question3">
+						    some drones are architects
+						  </label>
+						</div>
+					</div>
+					<div class="form-group mb-4">
+						<label>4. Tom has a new set of golf clubs. Using a club 8, the ball travels an average distance of 100 meters. Using a club 7, the ball travels an average distance of 108 meters. Using a club 6, the ball travels an average distance of 114 meters. How far will the ball go if Tom uses a club 5?</label>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question4" id="question4" value="option1">
+						  <label class="form-check-label" for="question4">
+						    122 meters
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question4" id="question4" value="option1">
+						  <label class="form-check-label" for="question4">
+						    120 meters
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question4" id="question4" value="option1">
+						  <label class="form-check-label" for="question4">
+						    118 meters
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question4" id="question4" value="option1">
+						  <label class="form-check-label" for="question4">
+						    116 meters
+						  </label>
+						</div>
+					</div>
+					<div class="form-group mb-4">
+						<label>Which answer expresses the meaning opposite of that of the specified word best?</label>
+						<label>5. tough</label>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question5" id="question5" value="option1">
+						  <label class="form-check-label" for="question5">
+						    cowardly
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question5" id="question5" value="option1">
+						  <label class="form-check-label" for="question5">
+						    starch
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question5" id="question5" value="option1">
+						  <label class="form-check-label" for="question5">
+						    strong
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question5" id="question5" value="option1">
+						  <label class="form-check-label" for="question5">
+						    tender
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="radio" name="question5" id="question5" value="option1">
+						  <label class="form-check-label" for="question5">
+						    masculine
+						  </label>
+						</div>
+					</div>
+
+					<a href="testSubmitted.html" class="btn btn-primary">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 
+	<footer class="bg-dark text-white">
+		<div class="container">
+			<h1>Test Footer</h1>
+		</div>
+	</footer> -->
+	
+	<script src="js/dropzone.js"></script>
+<!-- 	<script>
+		function countdown(endDate) {
+		  let days, hours, minutes, seconds;
+		  
+		  endDate = new Date(endDate).getTime();
+		  
+		  if (isNaN(endDate)) {
+			return;
+		  }
+		  
+		  setInterval(calculate, 1000);
+		  
+		  function calculate() {
+		    let startDate = new Date();
+		    startDate = startDate.getTime();
+		    
+		    let timeRemaining = parseInt((endDate - startDate) / 1000);
+		    
+		    if (timeRemaining >= 0) {
+		      days = parseInt(timeRemaining / 86400);
+		      timeRemaining = (timeRemaining % 86400);
+		      
+		      hours = parseInt(timeRemaining / 3600);
+		      timeRemaining = (timeRemaining % 3600);
+		      
+		      minutes = parseInt(timeRemaining / 60);
+		      timeRemaining = (timeRemaining % 60);
+		      
+		      seconds = parseInt(timeRemaining);
+		      
+		      document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
+		      document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
+		      document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
+		    } else {
+		      return;
+		    }
+		  }
+		}
+
+		(function () { 
+		  countdown('04/01/2333 05:00:00 PM'); 
+		}());
+	</script> -->
+</body>
+</html>
